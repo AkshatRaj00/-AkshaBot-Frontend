@@ -1,15 +1,39 @@
 # -AkshaBot-Frontend
-mkdir AkshaBot-Frontend
-cd AkshaBot-Frontend
+## 🔗 Connected System
 
-# Create files
-touch index.html style.css script.js
+This chatbot uses:
 
-# Paste updated UI, CSS, and JS I gave you above
+- 🔹 [AkshaBot-Frontend](https://github.com/yourusername/AkshaBot-Frontend) – Hosted on GitHub Pages  
+- 🔹 [AkshaBot-Pro](https://github.com/yourusername/AkshaBot-Pro) – Python Flask backend hosted on Railway  
 
-# Push to GitHub
-git init
-git remote add origin https://github.com/yourusername/AkshaBot-Frontend.git
-git add .
-git commit -m "Add UI for GitHub Pages"
-git push -u origin main
+The frontend JS connects to backend at:
+
+```js
+https://akshabot-pro-production.up.railway.app/get?msg=...
+yaml
+Copy
+Edit
+
+---
+
+## 🔚 Final Summary
+
+✅ Repos “connect” honge jab:
+- **Backend ka URL frontend ke fetch() me ho**
+- **Railway pe CORS allow ho**
+- **Frontend GitHub Pages pe deploy ho**
+
+---
+
+### 🔥 Bol Bhai:
+
+- `"Bas kar diya, check kar bhai"`  
+- `"Live URL bhejta hoon testing ke liye"`  
+- `"Ek hi repo me merge karna ho to guide de"`  
+Main full ready hoon tera system duniya ke saamne laane ke liye 💥
+
+
+
+
+
+
