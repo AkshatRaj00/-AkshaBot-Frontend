@@ -1,3 +1,5 @@
+const BACKEND_URL = "https://akshabot-pro-production.up.railway.app/get?msg=";
+
 function sendMessage() {
   const userInput = document.getElementById("userInput").value;
   const chatlog = document.getElementById("chatlog");
@@ -5,13 +7,13 @@ function sendMessage() {
   chatlog.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
   document.getElementById("userInput").value = "";
 
-  fetch(`https://akshabot-pro-production.up.railway.app/get?msg=${encodeURIComponent(userInput)}`)
+  fetch(`${BACKEND_URL}${encodeURIComponent(userInput)}`)
     .then(response => response.text())
     .then(data => {
       chatlog.innerHTML += `<p><strong>Bot:</strong> ${data}</p>`;
       chatlog.scrollTop = chatlog.scrollHeight;
     })
     .catch(error => {
-      chatlog.innerHTML += `<p><strong>Bot:</strong> Error connecting to server.</p>`;
+      chatlog.innerHTML += `<p><strong>Bot:</strong> ❌ Error talking to backend</p>`;
     });
 }
